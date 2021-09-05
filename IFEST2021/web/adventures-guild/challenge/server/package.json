@@ -1,0 +1,19 @@
+{
+    "name": "adventures-guild",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "keywords": [],
+    "author": "nyxsorcerer",
+    "license": "nyxsorcerer",
+    "dependencies": {
+        "cookie-parser": "^1.4.5",
+        "express": "^4.17.1",
+        "express-rate-limit": "^5.3.0",
+        "puppeteer": "^9.0.0",
+        "sqlite-async": "^1.1.0"
+    }
+}
