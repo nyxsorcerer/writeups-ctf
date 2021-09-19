@@ -1,0 +1,26 @@
+{{define "styles"}}
+  <style></style>
+{{ end }}
+{{define "content"}}
+    <div class="container">
+      <div class="row">
+        <div class="jumbotron mt-5">
+            <form action="/new_post" method="post">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Post title</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Post title" name="title">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput2" class="form-label">Post thumbnail</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Post thumbnail" name="thumbnail">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Post content</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Post content" rows="10" name="content"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+      </div>
+    </div>
+{{end}}

