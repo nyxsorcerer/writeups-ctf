@@ -83,7 +83,7 @@ if __name__ == '__main__':
     execute_from_command_line(sys.argv)
 ```
 
-## Spiral CI (Hard 496pts)
+## Spiral CI (Hard 496pts) ([Detailed Writeup](Web/SpiralCI))
 1. Application accepting JWT `none` algorithm
 2. Tampering `user_id` to `2`
 3. Calculator Project using local dependency
@@ -120,7 +120,7 @@ function c(HOST,PORT) {
 c(HOST,PORT);
 ```
 
-## Sticky Notes (Hard 500pts) ([Detailed Writeup](Web/Sticky%20Notes).)
+## Sticky Notes (Hard 500pts) ([Detailed Writeup](Web/Sticky%20Notes))
 1. The flow of oauth login for this application is something like this
 `sticky-notes/oauth/signin -> oaut/oauth/authorize?state=nyx -> sticky-notes/signin_callback?code=steal&state=nyx`
 2. Sticky notes application have XSS in `report a problem`
