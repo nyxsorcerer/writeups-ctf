@@ -15,7 +15,9 @@ And then, I realize the index page will automatically generating a JWT cookies. 
 I am using `jwt_tool` to modify the algorithm
 
 attempt to modify algorithm to `none` and user_id to `0`
+
 ![img/3.png](img/3.png "img_3")
+
 ![img/4.png](img/4.png "img_4")
 
 Lets set our cookies to the result of generated JWT.
