@@ -27,13 +27,17 @@ Great, We got a response showing that `user_id:0` didnt exist. It seems the appl
 let's check another `user_id` 
 
 `user_id:1`
+
 ![img/6.png](img/6.png "img_6")
+
 ![img/7.png](img/7.png "img_7")
 
 Well, the response is showing that the user is `disabled`. let's check another user
 
 `user_id:2`
+
 ![img/8.png](img/8.png "img_8")
+
 ![img/9.png](img/9.png "img_9")
 
 Great!, we got a valid user_id, let's download the ([projects](dl/))
@@ -64,6 +68,7 @@ I am pretty sure `calc_gl2xiahl1g` dependency is not a common name for public de
 The first thought i have is it was dependency confusion.
 
 init the packages using `$ npm init`
+
 ![img/10.png](img/10.png "img_10")
 
 add `"preinstall": "node calc.test.js"` inside `scripts` object
@@ -118,6 +123,7 @@ c(HOST,PORT);
 ```
 
 let's publish our package to npm `$ npm publish`
+
 ![img/12.png](img/12.png "img_12")
 
 Create a listening service and hit the `Launch Test` button
