@@ -140,7 +140,7 @@ document.querySelector('iframe').addEventListener("load", function(){
 </script>
 ```
 
-## Go Blog (Hard 500pts)
+## Go Blog (Hard 500pts) ([Detailed Writeup](Web/GoBlog))
 1. `url/models/` and `url/web/` leaking source code
 2. Username parameter have SSTI
 3. `{{.}}` get credentials of admin but password is encrypted in sha512
